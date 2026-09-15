@@ -25,8 +25,8 @@ Message principal : « La forêt nous protège. À notre tour de la protéger. �
 
 ## Pages
 
-- [Accueil](https://laforetsexpose.fr/) : présentation du projet, étapes, forêts, gestes, accueil de l'exposition.
-- [Mentions légales](https://laforetsexpose.fr/mentions-legales.html)
+- [Accueil](https://www.laforetsexpose.fr/) : présentation du projet, étapes, forêts, gestes, accueil de l'exposition.
+- [Mentions légales](https://www.laforetsexpose.fr/mentions-legales.html)
 
 ## Sources de référence
 
