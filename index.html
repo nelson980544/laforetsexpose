@@ -66,7 +66,8 @@
       "mainEntity": [
         {"@type": "Question", "name": "Qu'est-ce que La Forêt s'expose ?", "acceptedAnswer": {"@type": "Answer", "text": "Un projet de l'association Art for Good : des artistes dessinent, peignent, photographient ou sculptent des forêts de toute la France fragilisées par le changement climatique, puis leurs œuvres circulent dans les écoles, collèges, entreprises, mairies et offices de tourisme, où chaque lieu relève un défi pour la forêt."}},
         {"@type": "Question", "name": "Combien coûte l'accueil de l'exposition ?", "acceptedAnswer": {"@type": "Answer", "text": "L'accueil de l'exposition et la participation aux ateliers sont entièrement gratuits pour les lieux. Le site ne propose aucune vente."}},
-        {"@type": "Question", "name": "Qui peut accueillir l'exposition ?", "acceptedAnswer": {"@type": "Answer", "text": "Les écoles et collèges, les entreprises, les mairies et les offices de tourisme, partout en France. Demande à envoyer à contact@laforetsexpose.fr."}},
+        {"@type": "Question", "name": "J'ai un lieu d'exposition : qui peut accueillir les œuvres ?", "acceptedAnswer": {"@type": "Answer", "text": "Les écoles et collèges, les entreprises, les mairies et les offices de tourisme, partout en France. Demande à envoyer à contact@laforetsexpose.fr."}},
+        {"@type": "Question", "name": "Je suis artiste : comment exposer avec La Forêt s'expose ?", "acceptedAnswer": {"@type": "Answer", "text": "Artistes, artisans d'art et designers peuvent candidater en écrivant à contact@laforetsexpose.fr avec une courte présentation et des images ou un lien vers leur travail. Les artistes retenus sont accueillis en immersion en forêt, puis leurs œuvres circulent dans les lieux d'exposition partout en France."}},
         {"@type": "Question", "name": "Que comprend l'exposition ?", "acceptedAnswer": {"@type": "Answer", "text": "Les œuvres avec des cartels pédagogiques sur la forêt et le changement climatique, une rencontre avec les artistes, un atelier de création pour les élèves et, en mairie ou office de tourisme, un parcours avec les bons gestes à adopter en forêt."}},
         {"@type": "Question", "name": "Dans quelles forêts vont les artistes ?", "acceptedAnswer": {"@type": "Answer", "text": "Dans des forêts de plusieurs régions, publiques comme privées : le massif de Fontainebleau (Seine-et-Marne) pour la première immersion, les boisements méditerranéens d'Aubais (Gard), la forêt de pins de la Bibliothèque François-Mitterrand à Paris 13e, puis d'autres régions."}},
         {"@type": "Question", "name": "Quand et où l'exposition a-t-elle lieu ?", "acceptedAnswer": {"@type": "Answer", "text": "Inauguration en avril 2027 à Paris 13e lors du Marathon de l'Art, puis circulation d'avril 2027 à mars 2028, d'abord en Île-de-France, Nouvelle-Aquitaine et Occitanie."}},
@@ -185,6 +186,9 @@
   .retour{margin-top:2rem;min-height:3.2rem;font-family:var(--serif);font-size:1.5rem;color:var(--fluo);max-width:40rem}
   .gestes h2{color:var(--resine)}
 
+  /* ---------- Exposer (artistes) ---------- */
+  .artistes{background:var(--ciel)}
+
   /* ---------- Accueillir ---------- */
   .accueil{padding:5.5rem 0}
   .accueil .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center}
@@ -219,7 +223,8 @@
     <nav aria-label="Navigation principale">
       <a href="#projet">Le projet</a>
       <a href="#geste">Faire un geste</a>
-      <a href="#accueillir">Accueillir l'exposition</a>
+      <a href="#accueillir">J'ai un lieu d'exposition</a>
+      <a href="#exposer">Je veux exposer</a>
     </nav>
   </div>
 </header>
@@ -265,7 +270,8 @@
       <h1 id="titre">La forêt s'expose</h1>
       <p>Des artistes peignent les forêts de France, éprouvées par les sécheresses, les tempêtes et les incendies. Leurs œuvres entrent dans notre quotidien : à l'école, au bureau, à la mairie.</p>
       <div class="actions">
-        <a class="btn btn-resine" href="#accueillir">Accueillir l'exposition</a>
+        <a class="btn btn-resine" href="#accueillir">J'ai un lieu d'exposition</a>
+        <a class="btn btn-ligne" href="#exposer">Je veux exposer</a>
         <a class="btn btn-ligne" href="#geste">Faire un geste pour la forêt</a>
       </div>
     </div>
@@ -361,7 +367,7 @@
   <section class="accueil" id="accueillir" aria-labelledby="t-accueil">
     <div class="wrap">
       <div class="prose">
-        <h2 id="t-accueil">Accueillez l'exposition</h2>
+        <h2 id="t-accueil">J'ai un lieu d'exposition</h2>
         <p>Vous êtes enseignant, chef d'établissement, dirigeant, élu ou responsable d'un office de tourisme ? L'exposition peut venir chez vous.</p>
         <ul>
           <li>L'accueil est entièrement gratuit.</li>
@@ -371,7 +377,26 @@
       </div>
       <div class="carte-contact">
         <p>Dites-nous qui vous êtes, votre ville et le lieu que vous imaginez. Nous revenons vers vous rapidement.</p>
-        <a class="btn btn-resine" href="mailto:contact@laforetsexpose.fr?subject=Accueillir%20La%20For%C3%AAt%20s'expose">Écrire à l'équipe</a>
+        <a class="btn btn-resine" href="mailto:contact@laforetsexpose.fr?subject=J'ai%20un%20lieu%20d'exposition%20-%20La%20For%C3%AAt%20s'expose">Proposer mon lieu</a>
+        <span class="mail">contact@laforetsexpose.fr</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="accueil artistes" id="exposer" aria-labelledby="t-exposer">
+    <div class="wrap">
+      <div class="prose">
+        <h2 id="t-exposer">Je veux exposer</h2>
+        <p>Vous êtes artiste, artisan d'art ou designer ? Vous dessinez, peignez, photographiez ou sculptez, et la forêt vous inspire ? Rejoignez La Forêt s'expose.</p>
+        <ul>
+          <li>Une immersion en forêt, aux côtés de propriétaires et gestionnaires forestiers.</li>
+          <li>Vos œuvres exposées dans des écoles, des entreprises et des mairies partout en France.</li>
+          <li>Des rencontres avec les publics qui découvrent votre travail.</li>
+        </ul>
+      </div>
+      <div class="carte-contact">
+        <p>Présentez-vous en quelques lignes et joignez des images ou un lien vers votre travail. Nous revenons vers vous rapidement.</p>
+        <a class="btn btn-resine" href="mailto:contact@laforetsexpose.fr?subject=Je%20veux%20exposer%20-%20La%20For%C3%AAt%20s'expose">Je veux exposer</a>
         <span class="mail">contact@laforetsexpose.fr</span>
       </div>
     </div>
@@ -390,8 +415,12 @@
           <p>Rien. L'accueil de l'exposition et la participation aux ateliers sont entièrement gratuits pour les lieux. Le site laforetsexpose.fr est purement informatif et ne propose aucune vente.</p>
         </details>
         <details>
-          <summary>Qui peut accueillir l'exposition ?</summary>
+          <summary>J'ai un lieu d'exposition : qui peut accueillir les œuvres ?</summary>
           <p>Les écoles et collèges, les entreprises, les mairies et les offices de tourisme, partout en France. Pour en faire la demande, écrivez à contact@laforetsexpose.fr en indiquant qui vous êtes, votre ville et le lieu envisagé.</p>
+        </details>
+        <details>
+          <summary>Je suis artiste : comment exposer avec La Forêt s'expose ?</summary>
+          <p>Artistes, artisans d'art et designers peuvent proposer leur candidature en écrivant à contact@laforetsexpose.fr, avec une courte présentation et des images ou un lien vers leur travail. Les artistes retenus sont accueillis en immersion en forêt, puis leurs œuvres circulent dans les lieux d'exposition partout en France.</p>
         </details>
         <details>
           <summary>Que comprend l'exposition ?</summary>
