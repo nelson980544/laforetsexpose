@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Forêt s'expose — des artistes peignent la forêt, elle vient à vous</title>
+<meta name="description" content="Des artistes peignent une forêt des Landes éprouvée par le climat. Leurs œuvres s'exposent dans les écoles, les entreprises et les mairies. Un projet de l'association Art for Good.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pin:#0B5B35;      /* aiguilles de pin maritime, vert franc */
+    --pin-clair:#1FA64A;
+    --sable:#FFF6D6;    /* sable des Landes, lumineux */
+    --resine:#FFD000;   /* résine, jaune soleil */
+    --fluo:#C8FF2E;     /* vert fluo */
+    --charbon:#10201A;  /* tronc brûlé */
+    --ecorce:#8A5A32;
+    --ciel:#DFF7C4;     /* vert tendre */
+    --serif:"Young Serif", Georgia, serif;
+    --sans:"Public Sans", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--charbon);background:var(--sable)}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--fluo);outline-offset:3px}
+  .wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+  .prose{max-width:38rem}
+
+  /* ---------- En-tête ---------- */
+  .top{position:absolute;inset:0 0 auto;z-index:3}
+  .top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;padding-bottom:1.25rem}
+  .logo{font-family:var(--serif);font-size:1.25rem;color:var(--sable);text-decoration:none}
+  .top nav a{color:var(--sable);text-decoration:none;margin-left:1.5rem;font-size:.95rem;opacity:.9}
+  .top nav a:hover{opacity:1;text-decoration:underline}
+
+  /* ---------- Hero : la futaie ---------- */
+  .hero{position:relative;background:var(--pin);color:var(--sable);min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+  .futaie{position:absolute;inset:0;width:100%;height:100%}
+  .futaie .tronc{transform-box:fill-box;transform-origin:bottom;animation:pousse 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .futaie .brule{fill:var(--charbon)}
+  .futaie .vivant{fill:var(--ecorce)}
+  .futaie .clair{fill:#B07A3C}
+  @keyframes pousse{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+  @media (prefers-reduced-motion:reduce){.futaie .tronc{animation:none}html{scroll-behavior:auto}}
+  .hero-texte{position:relative;z-index:2;padding-bottom:4.5rem;padding-top:8rem}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,11vw,8.5rem);line-height:.92;letter-spacing:-.02em;max-width:9ch}
+  .hero p{margin-top:1.75rem;font-size:clamp(1.1rem,2vw,1.35rem);max-width:32rem;line-height:1.5}
+  .actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.25rem}
+  .btn{display:inline-block;padding:.9rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
+  .btn-resine{background:var(--resine);color:var(--charbon)}
+  .btn-resine:hover{background:var(--fluo)}
+  .btn-ligne{border:2px solid var(--fluo);color:var(--fluo)}
+  .btn-ligne:hover{background:var(--fluo);color:var(--pin)}
+  .hero h1{text-shadow:0 0 40px rgba(200,255,46,.25)}
+
+  /* ---------- Constat ---------- */
+  .constat{padding:6rem 0 5rem}
+  .constat .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:start}
+  .constat h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.02;color:var(--pin)}
+  .constat p + p{margin-top:1.1rem}
+
+  /* ---------- Étapes ---------- */
+  .etapes{background:var(--ciel);padding:5.5rem 0}
+  .etapes h2,.lieux h2,.gestes h2,.accueil h2,.porteur h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.1;color:var(--pin);margin-bottom:2.5rem}
+  .etapes ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:e}
+  .etapes li{counter-increment:e;padding:0 2rem 0 0;border-left:3px solid var(--pin);padding-left:1.25rem}
+  .etapes li + li{margin-left:1.5rem}
+  .etapes li::before{content:counter(e);font-family:var(--serif);font-size:3.5rem;line-height:1;color:var(--pin-clair);display:block;margin-bottom:.75rem}
+  .etapes li{border-left-color:var(--pin-clair)}
+  .etapes h3{font-size:1.2rem;margin-bottom:.5rem;color:var(--pin)}
+
+  /* ---------- Lieux ---------- */
+  .lieux{padding:5.5rem 0}
+  .lieux dl{display:grid;grid-template-columns:14rem 1fr;row-gap:0;max-width:52rem}
+  .lieux dt,.lieux dd{padding:1.4rem 0;border-top:1px solid rgba(38,33,29,.25)}
+  .lieux dt{font-family:var(--serif);font-size:1.35rem;color:var(--pin)}
+  .lieux dd{max-width:36rem}
+
+  /* ---------- Gestes ---------- */
+  .gestes{background:var(--charbon);color:var(--sable);padding:5.5rem 0}
+  .gestes h2{color:var(--sable)}
+  .gestes .intro{max-width:34rem;margin:-1.25rem 0 2.25rem}
+  .choix{display:flex;flex-wrap:wrap;gap:.75rem;max-width:56rem}
+  .choix button{font:inherit;font-size:1rem;background:transparent;color:var(--sable);border:2px solid rgba(228,218,194,.45);border-radius:999px;padding:.7rem 1.2rem;cursor:pointer;text-align:left}
+  .choix button:hover{border-color:var(--sable)}
+  .choix button:hover{border-color:var(--fluo);color:var(--fluo)}
+  .choix button[aria-pressed="true"]{background:var(--fluo);border-color:var(--fluo);color:var(--charbon);box-shadow:0 0 24px rgba(200,255,46,.45)}
+  .retour{margin-top:2rem;min-height:3.2rem;font-family:var(--serif);font-size:1.5rem;color:var(--fluo);max-width:40rem}
+  .gestes h2{color:var(--resine)}
+
+  /* ---------- Accueillir ---------- */
+  .accueil{padding:5.5rem 0}
+  .accueil .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center}
+  .accueil ul{margin:1.25rem 0 0 1.2rem}
+  .accueil li{margin-bottom:.4rem}
+  .carte-contact{background:var(--pin);color:var(--sable);border-radius:1.25rem;padding:2.25rem}
+  .carte-contact p{margin-bottom:1.5rem}
+  .carte-contact .mail{font-family:var(--serif);font-size:1.3rem;display:block;margin-top:1.25rem;word-break:break-all}
+
+  /* ---------- Porteur ---------- */
+  .porteur{background:var(--ciel);padding:5rem 0}
+  .porteur p + p{margin-top:1rem}
+
+  footer{background:var(--pin);color:var(--sable);padding:2.5rem 0;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+
+  @media (max-width:52rem){
+    .constat .wrap,.accueil .wrap{grid-template-columns:1fr;gap:2rem}
+    .etapes ol{grid-template-columns:1fr;gap:2.5rem}
+    .etapes li + li{margin-left:0}
+    .lieux dl{grid-template-columns:1fr}
+    .lieux dd{border-top:0;padding-top:0}
+    .top nav{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">La Forêt s'expose</a>
+    <nav aria-label="Navigation principale">
+      <a href="#projet">Le projet</a>
+      <a href="#geste">Faire un geste</a>
+      <a href="#accueillir">Accueillir l'exposition</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="titre">
+    <svg class="futaie" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <!-- Une futaie de pins : troncs vivants et troncs brûlés -->
+      <g>
+        <rect class="tronc vivant" x="40"   y="40"  width="22" height="760" style="animation-delay:.05s"/>
+        <rect class="tronc brule"  x="130"  y="120" width="18" height="680" style="animation-delay:.25s"/>
+        <rect class="tronc clair"  x="215"  y="0"   width="26" height="800" style="animation-delay:.1s"/>
+        <rect class="tronc brule"  x="330"  y="60"  width="20" height="740" style="animation-delay:.35s"/>
+        <rect class="tronc vivant" x="430"  y="180" width="16" height="620" style="animation-delay:.2s"/>
+        <rect class="tronc brule"  x="690"  y="20"  width="24" height="780" style="animation-delay:.3s"/>
+        <rect class="tronc vivant" x="790"  y="140" width="18" height="660" style="animation-delay:.15s"/>
+        <rect class="tronc clair"  x="880"  y="0"   width="30" height="800" style="animation-delay:.4s"/>
+        <rect class="tronc brule"  x="985"  y="90"  width="20" height="710" style="animation-delay:.2s"/>
+        <rect class="tronc vivant" x="1070" y="30"  width="24" height="770" style="animation-delay:.3s"/>
+        <rect class="tronc brule"  x="1150" y="160" width="16" height="640" style="animation-delay:.45s"/>
+      </g>
+      <!-- Houppiers -->
+      <g fill="#2FBF5A" opacity=".9">
+        <ellipse cx="51"   cy="40"  rx="90"  ry="34"/>
+        <ellipse cx="228"  cy="10"  rx="110" ry="40"/>
+        <ellipse cx="438"  cy="180" rx="70"  ry="26"/>
+        <ellipse cx="799"  cy="140" rx="85"  ry="30"/>
+        <ellipse cx="895"  cy="0"   rx="120" ry="44"/>
+        <ellipse cx="1082" cy="30"  rx="95"  ry="34"/>
+      </g>
+      <!-- Voile pour la lisibilité du texte -->
+      <rect width="1200" height="800" fill="url(#voile)"/>
+      <defs>
+        <linearGradient id="voile" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0B5B35" stop-opacity=".05"/>
+          <stop offset=".55" stop-color="#0B5B35" stop-opacity=".5"/>
+          <stop offset="1" stop-color="#0B5B35" stop-opacity=".95"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="wrap hero-texte">
+      <h1 id="titre">La forêt s'expose</h1>
+      <p>Des artistes peignent une forêt des Landes éprouvée par les tempêtes, les sécheresses et les incendies. Leurs œuvres viennent jusqu'à vous : à l'école, au bureau, à la mairie.</p>
+      <div class="actions">
+        <a class="btn btn-resine" href="#accueillir">Accueillir l'exposition</a>
+        <a class="btn btn-ligne" href="#geste">Faire un geste pour la forêt</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="constat" id="projet" aria-labelledby="t-constat">
+    <div class="wrap">
+      <h2 id="t-constat">La forêt nous protège. À notre tour de la protéger.</h2>
+      <div class="prose">
+        <p>Les forêts couvrent près d'un tiers de la France. Sécheresses, canicules, tempêtes, incendies, maladies : elles doivent s'adapter à un climat qui change plus vite qu'elles.</p>
+        <p>La forêt des Landes en est un symbole. Façonnée par la main de l'homme, durement éprouvée ces dernières années, elle est aujourd'hui gérée autrement pour résister au climat de demain.</p>
+        <p>Pourtant, pour beaucoup d'entre nous, la forêt reste un décor de vacances. On protège mieux ce qu'on a appris à regarder : alors nous la faisons revenir dans notre quotidien.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="etapes" aria-labelledby="t-etapes">
+    <div class="wrap">
+      <h2 id="t-etapes">Comment ça marche</h2>
+      <ol>
+        <li>
+          <h3>Les artistes peignent la forêt</h3>
+          <p>Accueillis en immersion par un propriétaire forestier landais, ils découvrent la vie de la forêt, ses cicatrices et la façon dont on l'adapte au changement climatique.</p>
+        </li>
+        <li>
+          <h3>Les œuvres s'exposent près de chez vous</h3>
+          <p>Elles circulent partout en France, accompagnées de repères pédagogiques, d'une rencontre avec l'artiste et, pour les élèves, d'un atelier de création.</p>
+        </li>
+        <li>
+          <h3>Chacun relève un défi pour la forêt</h3>
+          <p>Chaque classe, chaque équipe et chaque visiteur choisit un geste concret. Les engagements sont rassemblés et présentés à la fin du parcours.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="lieux" aria-labelledby="t-lieux">
+    <div class="wrap">
+      <h2 id="t-lieux">Là où vous vivez, étudiez, travaillez</h2>
+      <dl>
+        <dt>Écoles et collèges</dt>
+        <dd>Les élèves découvrent les œuvres, rencontrent l'artiste et créent à leur tour leur propre tableau de la forêt.</dd>
+        <dt>Entreprises</dt>
+        <dd>Les œuvres s'installent dans les espaces de travail. Chaque équipe choisit son engagement pour la forêt.</dd>
+        <dt>Mairies et offices de tourisme</dt>
+        <dd>Un parcours ouvert à tous, habitants comme vacanciers, avec les bons gestes à adopter lors des sorties en forêt.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="gestes" id="geste" aria-labelledby="t-gestes">
+    <div class="wrap">
+      <h2 id="t-gestes">Quel geste ferez-vous pour elle ?</h2>
+      <p class="intro">Choisissez celui qui vous ressemble. Pas besoin d'être expert : il suffit de commencer.</p>
+      <div class="choix" role="group" aria-label="Gestes pour la forêt">
+        <button type="button" aria-pressed="false" data-merci="Moins de papier, c'est moins de pression sur les forêts. Parlez-en à votre classe ou à votre équipe.">Utiliser moins de papier, et du papier recyclé</button>
+        <button type="button" aria-pressed="false" data-merci="En forêt, chaque geste compte : chemins, déchets, feu. Partagez ces règles avec ceux qui vous accompagnent.">Respecter la forêt pendant mes sorties</button>
+        <button type="button" aria-pressed="false" data-merci="Renseignez-vous auprès de votre mairie ou d'une association locale pour rejoindre une journée de plantation.">Participer à une journée de plantation</button>
+        <button type="button" aria-pressed="false" data-merci="Faites venir l'exposition dans votre école, votre entreprise ou votre commune : c'est gratuit.">Devenir ambassadeur de la forêt</button>
+      </div>
+      <p class="retour" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="accueil" id="accueillir" aria-labelledby="t-accueil">
+    <div class="wrap">
+      <div class="prose">
+        <h2 id="t-accueil">Accueillez l'exposition</h2>
+        <p>Vous êtes enseignant, chef d'établissement, dirigeant, élu ou responsable d'un office de tourisme ? L'exposition peut venir chez vous.</p>
+        <ul>
+          <li>L'accueil est entièrement gratuit.</li>
+          <li>Les œuvres arrivent avec leurs repères pédagogiques.</li>
+          <li>Une rencontre avec l'artiste est organisée sur place ou à distance.</li>
+        </ul>
+      </div>
+      <div class="carte-contact">
+        <p>Dites-nous qui vous êtes, votre ville et le lieu que vous imaginez. Nous revenons vers vous rapidement.</p>
+        <a class="btn btn-resine" href="mailto:contact@laforetsexpose.fr?subject=Accueillir%20La%20For%C3%AAt%20s'expose">Écrire à l'équipe</a>
+        <span class="mail">contact@laforetsexpose.fr</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="porteur" aria-labelledby="t-porteur">
+    <div class="wrap prose">
+      <h2 id="t-porteur">Un projet d'Art for Good</h2>
+      <p>Art for Good est une association loi 1901 qui fait entrer l'art dans les lieux du quotidien, avec un réseau de 50 artistes, artisans d'art et designers. Son Marathon de l'Art a été labellisé par l'Olympiade culturelle des Jeux de Paris 2024.</p>
+      <p>Avec La Forêt s'expose, l'association met ce savoir-faire au service de la protection des forêts.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>La Forêt s'expose, un projet de l'association Art for Good</span>
+    <span>Association loi 1901, RNA W751271647, 54 rue René Boulanger, 75010 Paris</span>
+  </div>
+</footer>
+
+<script>
+  const boutons = document.querySelectorAll('.choix button');
+  const retour = document.querySelector('.retour');
+  boutons.forEach(b => b.addEventListener('click', () => {
+    boutons.forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+    retour.textContent = b.dataset.merci;
+  }));
+</script>
+</body>
+</html>
