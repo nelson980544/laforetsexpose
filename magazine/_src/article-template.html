@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  MODÈLE D'ARTICLE — Magazine La Forêt s'expose
+  Ce fichier n'est pas publié (dossier _src). Le script scripts/magazine.mjs
+  remplace chaque {{variable}} pour produire /magazine/<slug>/index.html.
+  Variables disponibles : titre, description, canonical, image, image_alt, mots_cles,
+  jsonld, header, fil_ariane, rubrique_nom, rubrique_url, rubrique_slug, date_iso,
+  date_texte, maj_bloc, temps_lecture, chapeau, visuel, sommaire, contenu, auteur,
+  navigation, articles_lies, footer, feeds.
+  On peut modifier librement la mise en page, tant que les variables restent.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titre}} — Magazine La Forêt s'expose</title>
+<meta name="description" content="{{description}}">
+<meta name="keywords" content="{{mots_cles}}">
+<meta name="author" content="{{auteur}}">
+<link rel="canonical" href="{{canonical}}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Forêt s'expose">
+<meta property="og:title" content="{{titre}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{image}}">
+<meta property="og:image:alt" content="{{image_alt}}">
+<meta property="article:published_time" content="{{date_iso}}">
+<meta property="article:section" content="{{rubrique_nom}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{titre}}">
+<meta name="twitter:description" content="{{description}}">
+<meta name="twitter:image" content="{{image}}">
+{{feeds}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/magazine/magazine.css">
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body class="page-article rubrique-{{rubrique_slug}}">
+{{header}}
+<main id="contenu">
+  <article class="article" itemscope itemtype="https://schema.org/Article">
+    <header class="article-entete mag-wrap">
+      {{fil_ariane}}
+      <p class="article-rubrique"><a href="{{rubrique_url}}">{{rubrique_nom}}</a></p>
+      <h1 itemprop="headline">{{titre}}</h1>
+      <p class="article-chapeau" itemprop="description">{{chapeau}}</p>
+      <p class="article-meta">
+        Par <span itemprop="author">{{auteur}}</span> ·
+        <time datetime="{{date_iso}}" itemprop="datePublished">{{date_texte}}</time>{{maj_bloc}} ·
+        {{temps_lecture}} min de lecture
+      </p>
+    </header>
+
+    {{visuel}}
+
+    <div class="article-corps mag-wrap">
+      <aside class="article-sommaire" aria-label="Sommaire de l'article">
+        {{sommaire}}
+      </aside>
+      <div class="article-texte" itemprop="articleBody">
+        {{contenu}}
+      </div>
+    </div>
+
+    <footer class="article-pied mag-wrap">
+      {{navigation}}
+    </footer>
+  </article>
+
+  <section class="articles-lies mag-wrap" aria-labelledby="t-lies">
+    <h2 id="t-lies">Articles liés</h2>
+    {{articles_lies}}
+  </section>
+</main>
+{{footer}}
+<script src="/magazine/magazine.js" defer></script>
+</body>
+</html>

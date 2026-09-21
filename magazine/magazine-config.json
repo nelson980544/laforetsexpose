@@ -1,0 +1,91 @@
+{
+  "_commentaire": "Configuration du Magazine. Lue par scripts/magazine.mjs (build, new, publish). Modifier ici plutôt que dans le script.",
+
+  "site": {
+    "name": "La Forêt s'expose",
+    "url": "https://www.laforetsexpose.fr",
+    "lang": "fr-FR",
+    "publisher": "Art for Good",
+    "publisherId": "https://www.laforetsexpose.fr/#art-for-good",
+    "defaultImage": "/og-image.png",
+    "contact": "contact@laforetsexpose.fr"
+  },
+
+  "magazine": {
+    "title": "Le Magazine de La Forêt s'expose",
+    "shortTitle": "Magazine",
+    "path": "/magazine/",
+    "description": "Art, forêts et climat : le magazine de La Forêt s'expose. Comprendre les forêts de France, découvrir les artistes qui les peignent et suivre le projet d'Art for Good.",
+    "intro": "Des forêts qui changent, des artistes qui les regardent, un projet qui les fait entrer dans notre quotidien. Chaque semaine, un nouvel article pour comprendre et regarder autrement."
+  },
+
+  "publication": {
+    "_commentaire": "Rythme cible. Le script `publish` met en ligne les brouillons dont la date est atteinte et dont le statut vaut « pret ». La tâche planifiée (.github/workflows/magazine.yml) le lance chaque lundi.",
+    "frequency": "weekly",
+    "articlesPerRun": 1,
+    "day": "monday",
+    "hour": "08:00",
+    "timezone": "Europe/Paris",
+    "cron": "0 6 * * 1"
+  },
+
+  "paths": {
+    "_commentaire": "Chemins relatifs à la racine du dépôt. Les dossiers commençant par « _ » ne sont pas publiés par GitHub Pages : les sources restent privées.",
+    "sources": "magazine/_src/articles",
+    "drafts": "magazine/_src/brouillons",
+    "template": "magazine/_src/article-template.html",
+    "output": "magazine",
+    "llms": "llms.txt"
+  },
+
+  "pagination": {
+    "perPage": 12
+  },
+
+  "rubriques": [
+    {
+      "slug": "art-environnement",
+      "name": "Art & Environnement",
+      "icon": "feuille",
+      "description": "Comment l'art aide à regarder la nature autrement, et pourquoi il a sa place dans la protection des forêts."
+    },
+    {
+      "slug": "comprendre-la-foret",
+      "name": "Comprendre la Forêt",
+      "icon": "arbre",
+      "description": "Sécheresses, incendies, gestion forestière, biodiversité : les clés pour comprendre les forêts françaises, sources à l'appui."
+    },
+    {
+      "slug": "creation-artistes",
+      "name": "Création & Artistes",
+      "icon": "cercle",
+      "description": "Les artistes du projet, leurs immersions en forêt, leurs techniques et leurs œuvres."
+    },
+    {
+      "slug": "actualites",
+      "name": "Actualités du projet",
+      "icon": "pousse",
+      "description": "Les étapes de La Forêt s'expose : immersions, expositions, partenaires et rendez-vous."
+    }
+  ],
+
+  "metadata": {
+    "_commentaire": "Structure de l'en-tête (front matter) de chaque article Markdown, entre deux lignes « --- ».",
+    "required": ["titre", "chapeau", "date", "rubrique"],
+    "fields": {
+      "titre": "Titre de l'article (H1). 70 caractères maximum conseillés.",
+      "slug": "Optionnel. Adresse de l'article (/magazine/<slug>/). Généré depuis le titre s'il est absent.",
+      "chapeau": "Résumé de 1 à 2 phrases. Sert de meta description, d'extrait et de résumé pour les LLM (160 caractères conseillés).",
+      "date": "Date de publication, format AAAA-MM-JJ.",
+      "maj": "Optionnel. Date de dernière mise à jour, format AAAA-MM-JJ.",
+      "rubrique": "Slug d'une rubrique : art-environnement, comprendre-la-foret, creation-artistes ou actualites.",
+      "auteur": "Optionnel. Par défaut : Art for Good.",
+      "une": "Optionnel. « oui » pour faire passer l'article devant les autres articles publiés le même jour (À la une).",
+      "image": "Optionnel. Chemin d'une image (ex. /magazine/images/fontainebleau.jpg). Sinon, visuel de rubrique.",
+      "image_alt": "Texte alternatif de l'image (obligatoire si image).",
+      "mots_cles": "Optionnel. Mots-clés séparés par des virgules.",
+      "statut": "Brouillons uniquement : « brouillon » (jamais publié) ou « pret » (publié automatiquement à la date prévue)."
+    },
+    "body": "Markdown simple : paragraphes, ## Intertitre, ### Sous-intertitre, listes « - », > citation, **gras**, *italique*, [lien](https://…)."
+  }
+}

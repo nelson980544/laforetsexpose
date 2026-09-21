@@ -54,3 +54,22 @@ Message principal : « La forêt nous protège. À notre tour de la protéger. �
 - Centre national de la propriété forestière (CNPF)
 - Ministère de la Transition écologique, prévention des feux de forêt
 - INRAE, Ademe
+
+<!-- magazine:start (section générée par scripts/magazine.mjs) -->
+## Magazine
+
+Art, forêts et climat : le magazine de La Forêt s'expose. Comprendre les forêts de France, découvrir les artistes qui les peignent et suivre le projet d'Art for Good.
+
+- [Accueil du Magazine](https://www.laforetsexpose.fr/magazine/)
+- [Tous les articles](https://www.laforetsexpose.fr/magazine/articles/)
+- [Flux JSON avec le texte intégral des articles](https://www.laforetsexpose.fr/magazine/feed.json)
+- [Index des articles (JSON)](https://www.laforetsexpose.fr/magazine/magazine-index.json)
+- [Flux RSS](https://www.laforetsexpose.fr/magazine/feed.xml)
+
+### Articles
+
+- [La Forêt s'expose : des artistes au chevet des forêts de France](https://www.laforetsexpose.fr/magazine/la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france/) (Actualités du projet, 21 septembre 2026) : Art for Good lance La Forêt s'expose. Des artistes partent en immersion dans des forêts de plusieurs régions, puis leurs œuvres circulent gratuitement dans les écoles, les entreprises et les mairies.
+- [Artistes : partir en immersion avec La Forêt s'expose](https://www.laforetsexpose.fr/magazine/artistes-partir-en-immersion-avec-la-foret-s-expose/) (Création & Artistes, 21 septembre 2026) : Dessin, peinture, photographie, sculpture : La Forêt s'expose invite des artistes, artisans d'art et designers à créer en immersion dans des forêts de toute la France.
+- [Regarder la forêt : pourquoi passer par l'art pour la protéger ?](https://www.laforetsexpose.fr/magazine/regarder-la-foret-pourquoi-passer-par-l-art/) (Art & Environnement, 21 septembre 2026) : On protège mieux ce qu'on a appris à regarder. La Forêt s'expose fait de chaque œuvre une fenêtre ouverte sur la forêt, au milieu d'une classe, d'un bureau ou d'un hall de mairie.
+- [Sécheresses, scolytes, incendies : pourquoi les forêts françaises souffrent](https://www.laforetsexpose.fr/magazine/pourquoi-les-forets-francaises-souffrent/) (Comprendre la Forêt, 21 septembre 2026) : Les forêts couvrent près d'un tiers de la France et doivent s'adapter à un climat qui change plus vite qu'elles. Tour d'horizon des menaces, région par région.
+<!-- magazine:end -->

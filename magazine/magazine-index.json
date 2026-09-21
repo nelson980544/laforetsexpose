@@ -1,0 +1,176 @@
+{
+  "_commentaire": "Fichier généré par scripts/magazine.mjs — ne pas modifier à la main.",
+  "generated": "2026-09-21T13:33:53.253Z",
+  "magazine": {
+    "title": "Le Magazine de La Forêt s'expose",
+    "url": "https://www.laforetsexpose.fr/magazine/",
+    "description": "Art, forêts et climat : le magazine de La Forêt s'expose. Comprendre les forêts de France, découvrir les artistes qui les peignent et suivre le projet d'Art for Good."
+  },
+  "rubriques": [
+    {
+      "slug": "art-environnement",
+      "name": "Art & Environnement",
+      "icon": "feuille",
+      "description": "Comment l'art aide à regarder la nature autrement, et pourquoi il a sa place dans la protection des forêts.",
+      "url": "https://www.laforetsexpose.fr/magazine/rubrique/art-environnement/",
+      "count": 1
+    },
+    {
+      "slug": "comprendre-la-foret",
+      "name": "Comprendre la Forêt",
+      "icon": "arbre",
+      "description": "Sécheresses, incendies, gestion forestière, biodiversité : les clés pour comprendre les forêts françaises, sources à l'appui.",
+      "url": "https://www.laforetsexpose.fr/magazine/rubrique/comprendre-la-foret/",
+      "count": 1
+    },
+    {
+      "slug": "creation-artistes",
+      "name": "Création & Artistes",
+      "icon": "cercle",
+      "description": "Les artistes du projet, leurs immersions en forêt, leurs techniques et leurs œuvres.",
+      "url": "https://www.laforetsexpose.fr/magazine/rubrique/creation-artistes/",
+      "count": 1
+    },
+    {
+      "slug": "actualites",
+      "name": "Actualités du projet",
+      "icon": "pousse",
+      "description": "Les étapes de La Forêt s'expose : immersions, expositions, partenaires et rendez-vous.",
+      "url": "https://www.laforetsexpose.fr/magazine/rubrique/actualites/",
+      "count": 1
+    }
+  ],
+  "articles": [
+    {
+      "slug": "la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france",
+      "url": "https://www.laforetsexpose.fr/magazine/la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france/",
+      "path": "/magazine/la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france/",
+      "titre": "La Forêt s'expose : des artistes au chevet des forêts de France",
+      "chapeau": "Art for Good lance La Forêt s'expose. Des artistes partent en immersion dans des forêts de plusieurs régions, puis leurs œuvres circulent gratuitement dans les écoles, les entreprises et les mairies.",
+      "date": "2026-09-21",
+      "maj": null,
+      "dateTexte": "21 septembre 2026",
+      "rubrique": "actualites",
+      "rubriqueNom": "Actualités du projet",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "La Forêt s'expose",
+        "Art for Good",
+        "exposition itinérante",
+        "forêts françaises",
+        "Fontainebleau"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "La Forêt s'expose : des artistes au chevet des forêts de France",
+      "lecture": 2,
+      "mots": 381,
+      "intertitres": [
+        "Un projet en trois étapes",
+        "Des forêts de plusieurs régions",
+        "Premier rendez-vous : avril 2027",
+        "Comment participer"
+      ],
+      "source": "magazine/_src/articles/la-foret-s-expose-lancement.md"
+    },
+    {
+      "slug": "artistes-partir-en-immersion-avec-la-foret-s-expose",
+      "url": "https://www.laforetsexpose.fr/magazine/artistes-partir-en-immersion-avec-la-foret-s-expose/",
+      "path": "/magazine/artistes-partir-en-immersion-avec-la-foret-s-expose/",
+      "titre": "Artistes : partir en immersion avec La Forêt s'expose",
+      "chapeau": "Dessin, peinture, photographie, sculpture : La Forêt s'expose invite des artistes, artisans d'art et designers à créer en immersion dans des forêts de toute la France.",
+      "date": "2026-09-21",
+      "maj": null,
+      "dateTexte": "21 septembre 2026",
+      "rubrique": "creation-artistes",
+      "rubriqueNom": "Création & Artistes",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "artistes",
+        "immersion en forêt",
+        "appel à artistes",
+        "création",
+        "Art for Good"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "Artistes : partir en immersion avec La Forêt s'expose",
+      "lecture": 1,
+      "mots": 287,
+      "intertitres": [
+        "Une immersion aux côtés des forestiers",
+        "Toutes les pratiques sont bienvenues",
+        "Des œuvres qui voyagent, des rencontres avec le public",
+        "Qui peut candidater ?",
+        "Comment proposer sa candidature"
+      ],
+      "source": "magazine/_src/articles/artistes-rejoindre-la-foret-s-expose.md"
+    },
+    {
+      "slug": "regarder-la-foret-pourquoi-passer-par-l-art",
+      "url": "https://www.laforetsexpose.fr/magazine/regarder-la-foret-pourquoi-passer-par-l-art/",
+      "path": "/magazine/regarder-la-foret-pourquoi-passer-par-l-art/",
+      "titre": "Regarder la forêt : pourquoi passer par l'art pour la protéger ?",
+      "chapeau": "On protège mieux ce qu'on a appris à regarder. La Forêt s'expose fait de chaque œuvre une fenêtre ouverte sur la forêt, au milieu d'une classe, d'un bureau ou d'un hall de mairie.",
+      "date": "2026-09-21",
+      "maj": null,
+      "dateTexte": "21 septembre 2026",
+      "rubrique": "art-environnement",
+      "rubriqueNom": "Art & Environnement",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "art et environnement",
+        "sensibilisation",
+        "forêt",
+        "Art for Good",
+        "exposition"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "Regarder la forêt : pourquoi passer par l'art pour la protéger ?",
+      "lecture": 2,
+      "mots": 347,
+      "intertitres": [
+        "Une idée centrale : « Regardez la forêt »",
+        "L'émotion des artistes, la rigueur des forestiers",
+        "De la contemplation à l'action",
+        "Un savoir-faire éprouvé"
+      ],
+      "source": "magazine/_src/articles/regarder-la-foret-pourquoi-l-art.md"
+    },
+    {
+      "slug": "pourquoi-les-forets-francaises-souffrent",
+      "url": "https://www.laforetsexpose.fr/magazine/pourquoi-les-forets-francaises-souffrent/",
+      "path": "/magazine/pourquoi-les-forets-francaises-souffrent/",
+      "titre": "Sécheresses, scolytes, incendies : pourquoi les forêts françaises souffrent",
+      "chapeau": "Les forêts couvrent près d'un tiers de la France et doivent s'adapter à un climat qui change plus vite qu'elles. Tour d'horizon des menaces, région par région.",
+      "date": "2026-09-21",
+      "maj": null,
+      "dateTexte": "21 septembre 2026",
+      "rubrique": "comprendre-la-foret",
+      "rubriqueNom": "Comprendre la Forêt",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "forêt française",
+        "changement climatique",
+        "sécheresse",
+        "scolytes",
+        "incendies",
+        "gestion forestière"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "Sécheresses, scolytes, incendies : pourquoi les forêts françaises souffrent",
+      "lecture": 2,
+      "mots": 379,
+      "intertitres": [
+        "Des menaces qui s'additionnent",
+        "Aucune région n'est épargnée",
+        "Adapter la forêt au climat de demain",
+        "Un enjeu qui nous concerne tous",
+        "Sources"
+      ],
+      "source": "magazine/_src/articles/pourquoi-les-forets-francaises-souffrent.md"
+    }
+  ]
+}

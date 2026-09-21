@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.laforetsexpose.fr/sitemap.xml
+Sitemap: https://www.laforetsexpose.fr/magazine/sitemap-magazine.xml
