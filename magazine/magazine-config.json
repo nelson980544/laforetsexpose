@@ -20,7 +20,7 @@
   },
 
   "publication": {
-    "_commentaire": "Rythme cible. Le script `publish` met en ligne les brouillons dont la date est atteinte et dont le statut vaut « pret ». La tâche planifiée (.github/workflows/magazine.yml) le lance chaque lundi.",
+    "_commentaire": "Rythme cible. Le script `publish` met en ligne les brouillons dont la date est atteinte et dont le statut vaut « pret ». La tâche planifiée Claude « magazine-laforetsexpose-publication » (application Claude, section Scheduled) le lance chaque lundi à 8 h.",
     "frequency": "weekly",
     "articlesPerRun": 1,
     "day": "monday",
