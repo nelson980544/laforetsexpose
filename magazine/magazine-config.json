@@ -20,13 +20,13 @@
   },
 
   "publication": {
-    "_commentaire": "Rythme cible. Le script `publish` met en ligne les brouillons dont la date est atteinte et dont le statut vaut « pret ». La tâche planifiée Claude « magazine-laforetsexpose-publication » (application Claude, section Scheduled) le lance chaque lundi à 8 h.",
+    "_commentaire": "Rythme cible. Le script `publish` met en ligne les brouillons dont la date est atteinte et dont le statut vaut « pret ». La tâche planifiée Claude « magazine-laforetsexpose-publication » (application Claude, section Scheduled) le lance chaque jour à 8 h : un article paraît le jour de sa date.",
     "frequency": "weekly",
     "articlesPerRun": 1,
     "day": "monday",
     "hour": "08:00",
     "timezone": "Europe/Paris",
-    "cron": "0 8 * * 1 (heure de Paris)"
+    "cron": "0 8 * * * (heure de Paris)"
   },
 
   "paths": {
