@@ -6,7 +6,6 @@ date: 2026-09-22
 rubrique: art-environnement
 auteur: Art for Good
 mots_cles: s'enforester, Baptiste Morizot, philosophie du vivant, crise de la sensibilité, diplomatie du vivant, forêt
-statut: pret
 ---
 
 S'enforester, c'est une invitation à transformer notre manière d'être au monde. Nourrie par les travaux du philosophe **Baptiste Morizot**, cette idée propose de renouer avec la forêt non comme un décor ou une ressource, mais comme un milieu vivant, un partenaire, un espace de relation. Face à la crise écologique, s'enforester devient une manière de réapprendre à sentir, percevoir et comprendre le vivant.

@@ -1,6 +1,6 @@
 {
   "_commentaire": "Fichier généré par scripts/magazine.mjs — ne pas modifier à la main.",
-  "generated": "2026-09-21T13:33:53.253Z",
+  "generated": "2026-09-22T08:31:53.254Z",
   "magazine": {
     "title": "Le Magazine de La Forêt s'expose",
     "url": "https://www.laforetsexpose.fr/magazine/",
@@ -13,7 +13,7 @@
       "icon": "feuille",
       "description": "Comment l'art aide à regarder la nature autrement, et pourquoi il a sa place dans la protection des forêts.",
       "url": "https://www.laforetsexpose.fr/magazine/rubrique/art-environnement/",
-      "count": 1
+      "count": 2
     },
     {
       "slug": "comprendre-la-foret",
@@ -41,6 +41,42 @@
     }
   ],
   "articles": [
+    {
+      "slug": "s-enforester-philosophie-du-vivant",
+      "url": "https://www.laforetsexpose.fr/magazine/s-enforester-philosophie-du-vivant/",
+      "path": "/magazine/s-enforester-philosophie-du-vivant/",
+      "titre": "S'enforester : une philosophie du vivant pour réapprendre à habiter la forêt",
+      "chapeau": "S'enforester, c'est renouer avec la forêt comme un milieu vivant et non comme un décor. Une invitation nourrie par la pensée du philosophe Baptiste Morizot.",
+      "date": "2026-09-22",
+      "maj": null,
+      "dateTexte": "22 septembre 2026",
+      "rubrique": "art-environnement",
+      "rubriqueNom": "Art & Environnement",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "s'enforester",
+        "Baptiste Morizot",
+        "philosophie du vivant",
+        "crise de la sensibilité",
+        "diplomatie du vivant",
+        "forêt"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "S'enforester : une philosophie du vivant pour réapprendre à habiter la forêt",
+      "lecture": 3,
+      "mots": 579,
+      "intertitres": [
+        "Une crise écologique qui est d'abord une crise de la sensibilité",
+        "Habiter la forêt plutôt que la regarder",
+        "Une diplomatie avec le vivant",
+        "Faire confiance aux puissances de régénération du vivant",
+        "S'enforester, ce que font les artistes de La Forêt s'expose",
+        "Une manière de réapprendre à vivre",
+        "Pour aller plus loin"
+      ],
+      "source": "magazine/_src/articles/s-enforester-philosophie-du-vivant.md"
+    },
     {
       "slug": "la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france",
       "url": "https://www.laforetsexpose.fr/magazine/la-foret-s-expose-des-artistes-au-chevet-des-forets-de-france/",
