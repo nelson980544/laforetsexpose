@@ -546,7 +546,11 @@ function buildArticles(articles) {
    ========================================================= */
 
 function buildData(articles) {
-  const now = new Date().toISOString();
+  // Horodatage déduit du dernier article, et non de l'heure de génération : deux
+  // générations successives sans nouvel article produisent des fichiers identiques.
+  // Sans cela, la tâche planifiée enverrait chaque jour une modification inutile.
+  const derniere = articles.length ? articles.map(a => a.maj || a.date).sort().at(-1) : today();
+  const now = `${derniere}T08:00:00+02:00`;
 
   // magazine-index.json : index interne (filtres JS, outils, LLM).
   write(path.join(OUT, 'magazine-index.json'), JSON.stringify({
@@ -595,7 +599,7 @@ function buildData(articles) {
   <description>${esc(CONFIG.magazine.description)}</description>
   <language>fr-FR</language>
   <atom:link href="${abs(MAG + 'feed.xml')}" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+  <lastBuildDate>${dateRfc822(derniere)}</lastBuildDate>
 ${articles.map(a => `  <item>
     <title>${esc(a.titre)}</title>
     <link>${abs(a.url)}</link>
