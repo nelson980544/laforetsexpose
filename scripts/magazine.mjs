@@ -167,7 +167,10 @@ const ICONS = {
 };
 const icon = r => `<span class="mag-icone">${ICONS[r.icon] || ICONS.cercle}</span>`;
 
-const feedLinks = `<link rel="alternate" type="application/rss+xml" title="Magazine La Forêt s'expose (RSS)" href="${MAG}feed.xml">
+const feedLinks = `<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/icone-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Magazine La Forêt s'expose (RSS)" href="${MAG}feed.xml">
 <link rel="alternate" type="application/feed+json" title="Magazine La Forêt s'expose (JSON Feed)" href="${MAG}feed.json">`;
 
 function header(active) {
@@ -176,7 +179,7 @@ function header(active) {
   return `<a class="mag-evitement" href="#contenu">Aller au contenu</a>
 <header class="mag-entete">
   <div class="mag-wrap mag-entete-barre">
-    <a class="mag-logo" href="/">La Forêt s'expose</a>
+    <a class="mag-logo" href="/"><img src="/logo-blanc-symbole.png" alt="La Forêt s'expose" width="492" height="400"></a>
     <nav aria-label="Navigation principale">
       ${link(MAG, 'Magazine', 'magazine')}
       ${link(MAG + 'articles/', 'Tous les articles', 'articles')}

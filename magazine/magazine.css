@@ -45,7 +45,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; col
 .mag-entete a { color: var(--sable); text-decoration: none; }
 .mag-entete a:hover, .mag-entete a[aria-current] { color: #fff; text-decoration: underline; text-decoration-color: var(--ocre); text-decoration-thickness: 2px; }
 .mag-entete-barre { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1.5rem; padding-block: 1rem; }
-.mag-logo { font-family: var(--serif); font-size: 1.25rem; }
+.mag-logo { display: inline-block; line-height: 0; }
+.mag-logo img { width: auto; height: 2.75rem; }
 .mag-entete nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; font-size: .95rem; }
 .mag-rubriques-nav { background: rgba(0, 0, 0, .14); font-size: .9rem; }
 .mag-rubriques-nav .mag-wrap { display: flex; gap: 1.25rem; overflow-x: auto; padding-block: .6rem; white-space: nowrap; scrollbar-width: none; }

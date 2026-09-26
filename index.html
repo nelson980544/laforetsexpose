@@ -18,7 +18,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="La forêt s'expose : des artistes peignent les forêts de France">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/icone-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +109,9 @@
   /* ---------- En-tête ---------- */
   .top{position:absolute;inset:0 0 auto;z-index:3}
   .top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;padding-bottom:1.25rem}
-  .logo{font-family:var(--serif);font-size:1.25rem;color:var(--sable);text-decoration:none}
+  .logo{display:inline-block;line-height:0}
+  .logo img{width:auto;height:3.25rem}
+  @media (max-width:52rem){.logo img{height:2.5rem}}
   .top nav a{color:var(--sable);text-decoration:none;margin-left:1.5rem;font-size:.95rem;opacity:.9}
   .top nav a:hover{opacity:1;text-decoration:underline}
 
@@ -219,7 +223,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#">La Forêt s'expose</a>
+    <a class="logo" href="/"><img src="/logo-blanc-symbole.png" alt="La Forêt s'expose" width="492" height="400"></a>
     <nav aria-label="Navigation principale">
       <a href="#projet">Le projet</a>
       <a href="#geste">Relever un défi</a>
