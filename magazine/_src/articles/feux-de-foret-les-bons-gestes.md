@@ -6,7 +6,6 @@ date: 2026-09-28
 rubrique: comprendre-la-foret
 auteur: Art for Good
 mots_cles: feux de forêt, prévention, bons gestes, incendie, forêt
-statut: pret
 ---
 
 Neuf feux de forêt sur dix sont d'origine humaine, rappelle le ministère de la Transition écologique dans ses campagnes de prévention. Imprudence, mégot, barbecue, travaux : la plupart des départs de feu pourraient être évités. Les bons comportements sont donc le premier moyen de protéger la forêt.

@@ -1,6 +1,6 @@
 {
   "_commentaire": "Fichier généré par scripts/magazine.mjs — ne pas modifier à la main.",
-  "generated": "2026-09-22T08:00:00+02:00",
+  "generated": "2026-09-28T08:00:00+02:00",
   "magazine": {
     "title": "Le Magazine de La Forêt s'expose",
     "url": "https://www.laforetsexpose.fr/magazine/",
@@ -21,7 +21,7 @@
       "icon": "arbre",
       "description": "Sécheresses, incendies, gestion forestière, biodiversité : les clés pour comprendre les forêts françaises, sources à l'appui.",
       "url": "https://www.laforetsexpose.fr/magazine/rubrique/comprendre-la-foret/",
-      "count": 1
+      "count": 2
     },
     {
       "slug": "creation-artistes",
@@ -41,6 +41,38 @@
     }
   ],
   "articles": [
+    {
+      "slug": "feux-de-foret-les-bons-gestes",
+      "url": "https://www.laforetsexpose.fr/magazine/feux-de-foret-les-bons-gestes/",
+      "path": "/magazine/feux-de-foret-les-bons-gestes/",
+      "titre": "Neuf feux de forêt sur dix sont d'origine humaine : les bons gestes à connaître",
+      "chapeau": "La plupart des feux de forêt sont provoqués par l'homme. Trois réflexes simples, rappelés par les campagnes nationales de prévention, suffisent à réduire le risque.",
+      "date": "2026-09-28",
+      "maj": null,
+      "dateTexte": "28 septembre 2026",
+      "rubrique": "comprendre-la-foret",
+      "rubriqueNom": "Comprendre la Forêt",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "feux de forêt",
+        "prévention",
+        "bons gestes",
+        "incendie",
+        "forêt"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "Neuf feux de forêt sur dix sont d'origine humaine : les bons gestes à connaître",
+      "lecture": 1,
+      "mots": 226,
+      "intertitres": [
+        "Trois réflexes en forêt",
+        "Une vigilance particulière en été",
+        "La Forêt s'expose relaie ces gestes",
+        "Source"
+      ],
+      "source": "magazine/_src/articles/feux-de-foret-les-bons-gestes.md"
+    },
     {
       "slug": "s-enforester-philosophie-du-vivant",
       "url": "https://www.laforetsexpose.fr/magazine/s-enforester-philosophie-du-vivant/",
