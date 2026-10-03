@@ -6,7 +6,6 @@ date: 2026-09-29
 rubrique: comprendre-la-foret
 auteur: Art for Good
 mots_cles: Simona Kossak, forêt de Białowieża, forêt primaire, Pologne, écologie, portrait, protection du vivant
-statut: pret
 ---
 
 Simona Gabriela Kossak (1943-2007) fut l'une des grandes voix de la protection du vivant en Europe. Biologiste, écologue et professeure de sciences forestières, elle a consacré sa vie à la **forêt de Białowieża**, en Pologne, l'une des dernières forêts primaires d'Europe. Elle y a vécu plus de trente ans dans une maison forestière isolée, sans eau courante ni électricité.

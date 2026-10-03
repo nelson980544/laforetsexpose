@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.laforetsexpose.fr/</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://www.laforetsexpose.fr/mentions-legales.html</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
-</urlset>
+<!-- Index des sitemaps : il regroupe le sitemap du site et celui du Magazine,
+     ce dernier étant régénéré automatiquement à chaque publication d'article. -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.laforetsexpose.fr/sitemap-site.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.laforetsexpose.fr/magazine/sitemap-magazine.xml</loc>
+  </sitemap>
+</sitemapindex>
