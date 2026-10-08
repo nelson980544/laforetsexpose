@@ -6,7 +6,6 @@ date: 2026-10-06
 rubrique: art-environnement
 auteur: Art for Good
 mots_cles: Gilles Clément, arbres remarquables, jardin en mouvement, tiers paysage, paysage, biodiversité
-statut: pret
 ---
 
 Jardinier, paysagiste, botaniste et écrivain, **Gilles Clément** a profondément renouvelé notre manière de regarder la nature. Ses idées de « jardin en mouvement » et de « tiers paysage » offrent une grille de lecture précieuse pour les arbres remarquables : non plus des monuments à admirer, mais des êtres vivants, dynamiques, inscrits dans un paysage qui change.

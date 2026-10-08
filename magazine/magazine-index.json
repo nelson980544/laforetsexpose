@@ -1,6 +1,6 @@
 {
   "_commentaire": "Fichier généré par scripts/magazine.mjs — ne pas modifier à la main.",
-  "generated": "2026-09-29T08:00:00+02:00",
+  "generated": "2026-10-06T08:00:00+02:00",
   "magazine": {
     "title": "Le Magazine de La Forêt s'expose",
     "url": "https://www.laforetsexpose.fr/magazine/",
@@ -13,7 +13,7 @@
       "icon": "feuille",
       "description": "Comment l'art aide à regarder la nature autrement, et pourquoi il a sa place dans la protection des forêts.",
       "url": "https://www.laforetsexpose.fr/magazine/rubrique/art-environnement/",
-      "count": 2
+      "count": 3
     },
     {
       "slug": "comprendre-la-foret",
@@ -41,6 +41,41 @@
     }
   ],
   "articles": [
+    {
+      "slug": "gilles-clement-arbres-remarquables",
+      "url": "https://www.laforetsexpose.fr/magazine/gilles-clement-arbres-remarquables/",
+      "path": "/magazine/gilles-clement-arbres-remarquables/",
+      "titre": "Gilles Clément : regarder les arbres remarquables comme des acteurs du vivant",
+      "chapeau": "Jardin en mouvement, tiers paysage, « faire avec » : la pensée du jardinier Gilles Clément invite à voir dans un arbre remarquable non un monument figé, mais un être vivant qui agit sur tout un milieu.",
+      "date": "2026-10-06",
+      "maj": null,
+      "dateTexte": "6 octobre 2026",
+      "rubrique": "art-environnement",
+      "rubriqueNom": "Art & Environnement",
+      "auteur": "Art for Good",
+      "motsCles": [
+        "Gilles Clément",
+        "arbres remarquables",
+        "jardin en mouvement",
+        "tiers paysage",
+        "paysage",
+        "biodiversité"
+      ],
+      "image": "https://www.laforetsexpose.fr/og-image.png",
+      "hasImage": false,
+      "imageAlt": "Gilles Clément : regarder les arbres remarquables comme des acteurs du vivant",
+      "lecture": 3,
+      "mots": 510,
+      "intertitres": [
+        "Un arbre remarquable, un acteur plutôt qu'un monument",
+        "« Faire le plus possible avec, le moins possible contre »",
+        "Le tiers paysage : là où le vivant reprend sa place",
+        "Une beauté façonnée par le vivant",
+        "Une nouvelle manière de regarder les arbres",
+        "Pour aller plus loin"
+      ],
+      "source": "magazine/_src/articles/gilles-clement-arbres-remarquables.md"
+    },
     {
       "slug": "portrait-simona-kossak-foret-de-bialowieza",
       "url": "https://www.laforetsexpose.fr/magazine/portrait-simona-kossak-foret-de-bialowieza/",
